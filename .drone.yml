@@ -1,0 +1,4 @@
+pipeline:
+  docker:
+    image: gigavoid/web-disk-cache
+    tags: latest
