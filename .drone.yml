@@ -7,9 +7,7 @@ pipeline:
   docker:
     image: plugins/docker
     repo: gigavoid/web-disk-cache
-    secrets: [ DOCKER_USERNAME, DOCKER_PASSWORD ]
+    secrets: [ docker_username, docker_password ]
     tags:
       - latest
       - $$DRONE_COMMIT_BRANCH
-    username: $DOCKER_USERNAME
-    password: $DOCKER_PASSWORD
