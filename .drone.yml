@@ -10,4 +10,3 @@ pipeline:
     secrets: [ docker_username, docker_password ]
     tags:
       - latest
-      - $DRONE_COMMIT_BRANCH
