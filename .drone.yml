@@ -3,3 +3,5 @@ pipeline:
     image: plugins/docker
     secrets: [ docker_username, docker_password ]
     repo: gigavoid/web-disk-cache
+    when:
+      branch: master
