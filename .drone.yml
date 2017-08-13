@@ -7,3 +7,8 @@ pipeline:
       - $$DRONE_COMMIT_BRANCH
     username: $$DOCKER_USERNAME
     password: $$DOCKER_PASSWORD
+
+  test:
+    image: alpine
+    commands:
+      - env
