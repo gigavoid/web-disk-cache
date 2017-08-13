@@ -1,4 +1,9 @@
 pipeline:
+  test:
+    image: alpine
+    commands:
+      - env
+
   docker:
     image: plugins/docker
     repo: gigavoid/web-disk-cache
@@ -7,8 +12,3 @@ pipeline:
       - $$DRONE_COMMIT_BRANCH
     username: $$DOCKER_USERNAME
     password: $$DOCKER_PASSWORD
-
-  test:
-    image: alpine
-    commands:
-      - env
