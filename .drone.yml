@@ -1,4 +1,5 @@
 pipeline:
   docker:
     image: gigavoid/web-disk-cache
+    repo: gigavoid/web-disk-cache
     tags: latest
