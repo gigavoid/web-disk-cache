@@ -3,5 +3,5 @@ pipeline:
     image: plugins/docker
     repo: gigavoid/web-disk-cache
     tags: latest
-    username: ${DOCKER_USERNAME}
-    password: ${DOCKER_PASSWORD}
+    username: $$DOCKER_USERNAME
+    password: $$DOCKER_PASSWORD
